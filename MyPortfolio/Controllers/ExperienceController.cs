@@ -25,5 +25,13 @@ namespace MyPortfolio.Controllers
 			context.SaveChanges();
 			return RedirectToAction(nameof(ExperienceList));
 		}
+
+		public IActionResult DeleteExperience(int id)
+		{
+			var value = context.Experiences.Find(id);
+			context.Experiences.Remove(value);
+			context.SaveChanges();
+			return RedirectToAction(nameof(ExperienceList));
+		}
 	}
 }
