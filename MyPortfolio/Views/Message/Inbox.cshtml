@@ -27,8 +27,6 @@
 									<th scope="col">Mesajı Aç</th>
 									<th scope="col">Durum</th>
 									<th scope="col">Sil</th>
-									<th scope="col">Güncelle</th>
-
 								</tr>
 							</thead>
 							<tbody>
@@ -48,9 +46,7 @@
 										{
 											<td><a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-info">Okundu Olarak İşaretle</a></td>
 										}
-										<td><a href="/Message/DeleteExperience/@item.MessageId" class="btn btn-danger">Sil</a></td>
-										<td><a href="/Message/UpdateExperience/@item.MessageId" class="btn btn-success">Güncelle</a></td>
-									</tr>
+										<td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>									</tr>
 								}
 							</tbody>
 						</table>
